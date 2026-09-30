@@ -1,0 +1,42 @@
+[
+  {
+    "id": "FAC-JAMNAGAR-REFINERY",
+    "name": "Coastal refining complex (mapped)",
+    "facility_type": "oil_refinery",
+    "latitude": 22.3741,
+    "longitude": 69.8688,
+    "osm_id": "demo:way:1001",
+    "region": "Jamnagar, Gujarat",
+    "source": "demo"
+  },
+  {
+    "id": "FAC-HAZIRA-CHEM",
+    "name": "Hazira chemical / petrochemical site (mapped)",
+    "facility_type": "chemical_plant",
+    "latitude": 21.1592,
+    "longitude": 72.6481,
+    "osm_id": "demo:way:1002",
+    "region": "Hazira, Gujarat",
+    "source": "demo"
+  },
+  {
+    "id": "FAC-PUNE-MFG",
+    "name": "Pimpri manufacturing estate (mapped)",
+    "facility_type": "manufacturing",
+    "latitude": 18.6299,
+    "longitude": 73.7995,
+    "osm_id": "demo:way:1003",
+    "region": "Pune, Maharashtra",
+    "source": "demo"
+  },
+  {
+    "id": "FAC-SURAT-STEEL",
+    "name": "Hazira metals processing (mapped)",
+    "facility_type": "metals",
+    "latitude": 21.1488,
+    "longitude": 72.6610,
+    "osm_id": "demo:way:1004",
+    "region": "Hazira, Gujarat",
+    "source": "demo"
+  }
+]

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0b0d10;
+  color: #e8eef2;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a323b transparent;
+}
+
+.maplibregl-popup-content {
+  background: #171b20 !important;
+  color: #e8eef2 !important;
+  border: 1px solid #2a323b;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  font-size: 12px;
+  padding: 8px 10px !important;
+}
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: #171b20 !important;
+}
+
+.maplibregl-ctrl-group {
+  background: #171b20 !important;
+  border: 1px solid #2a323b !important;
+}
+
+.maplibregl-ctrl-group button {
+  filter: invert(1);
+}

@@ -1,0 +1,426 @@
+{
+  "selector_version": "live-demo-cases-1.0",
+  "live_observation_count": 1095,
+  "live_cluster_count": 624,
+  "historical_observation_count": 247,
+  "historical_bboxes": [
+    "76.4560,14.9760,76.8560,15.3760",
+    "86.9570,23.4634,87.3570,23.8634",
+    "69.1670,27.8512,69.5670,28.2512"
+  ],
+  "historical_reports": [
+    {
+      "archive_method": "firms_area_api_dated",
+      "endpoint": "https://firms.modaps.eosdis.nasa.gov/api/area/csv/<MAP_KEY>/VIIRS_SNPP_NRT/<bbox>/5/<YYYY-MM-DD>",
+      "availability_endpoint": "https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/<MAP_KEY>/VIIRS_SNPP_NRT",
+      "data_product": "VIIRS_SNPP_NRT",
+      "processing": "nrt_archive",
+      "bbox": "76.4560,14.9760,76.8560,15.3760",
+      "requested_start": "2026-08-11",
+      "requested_end": "2026-09-09",
+      "query_start": "2026-08-11",
+      "query_end": "2026-09-09",
+      "availability_min": "2026-04-28",
+      "availability_max": "2026-09-14",
+      "cache_hit": false,
+      "http_requests": 7,
+      "availability_http": 1,
+      "area_http": 6,
+      "errors": [],
+      "record_count": 162,
+      "actual_start": "2026-08-14",
+      "actual_end": "2026-09-09",
+      "covers_requested_window": false
+    },
+    {
+      "archive_method": "firms_area_api_dated",
+      "endpoint": "https://firms.modaps.eosdis.nasa.gov/api/area/csv/<MAP_KEY>/VIIRS_SNPP_NRT/<bbox>/5/<YYYY-MM-DD>",
+      "availability_endpoint": "https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/<MAP_KEY>/VIIRS_SNPP_NRT",
+      "data_product": "VIIRS_SNPP_NRT",
+      "processing": "nrt_archive",
+      "bbox": "86.9570,23.4634,87.3570,23.8634",
+      "requested_start": "2026-08-11",
+      "requested_end": "2026-09-09",
+      "query_start": "2026-08-11",
+      "query_end": "2026-09-09",
+      "availability_min": "2026-04-28",
+      "availability_max": "2026-09-14",
+      "cache_hit": false,
+      "http_requests": 7,
+      "availability_http": 1,
+      "area_http": 6,
+      "errors": [],
+      "record_count": 85,
+      "actual_start": "2026-08-12",
+      "actual_end": "2026-09-08",
+      "covers_requested_window": false
+    },
+    {
+      "archive_method": "firms_area_api_dated",
+      "endpoint": "https://firms.modaps.eosdis.nasa.gov/api/area/csv/<MAP_KEY>/VIIRS_SNPP_NRT/<bbox>/5/<YYYY-MM-DD>",
+      "availability_endpoint": "https://firms.modaps.eosdis.nasa.gov/api/data_availability/csv/<MAP_KEY>/VIIRS_SNPP_NRT",
+      "data_product": "VIIRS_SNPP_NRT",
+      "processing": "nrt_archive",
+      "bbox": "69.1670,27.8512,69.5670,28.2512",
+      "requested_start": "2026-08-11",
+      "requested_end": "2026-09-09",
+      "query_start": "2026-08-11",
+      "query_end": "2026-09-09",
+      "availability_min": "2026-04-28",
+      "availability_max": "2026-09-14",
+      "cache_hit": false,
+      "http_requests": 7,
+      "availability_http": 1,
+      "area_http": 6,
+      "errors": [],
+      "record_count": 0,
+      "actual_start": null,
+      "actual_end": null,
+      "covers_requested_window": false
+    }
+  ],
+  "osm_queries": 3,
+  "osm_cluster_ids": [
+    "SRC-A3976843",
+    "SRC-E98F0751",
+    "SRC-A4964848"
+  ],
+  "osm_evaluated": [
+    {
+      "cluster_id": "SRC-A4964848",
+      "latitude": 28.051231666666666,
+      "longitude": 69.36696333333333,
+      "observation_count": 6,
+      "live_observation_count": 6,
+      "historical_observation_count": 0,
+      "observation_date_range": {
+        "start": "2026-09-11T08:07:00+00:00",
+        "end": "2026-09-12T07:50:00+00:00"
+      },
+      "live_date_range": {
+        "start": "2026-09-11T08:07:00+00:00",
+        "end": "2026-09-12T07:50:00+00:00"
+      },
+      "osm_context_status": "available",
+      "nearest_industrial_facility": {
+        "id": "OSM-way-1049716917",
+        "name": "Qadirpur Gas Plant",
+        "facility_type": "gas",
+        "latitude": 28.049455,
+        "longitude": 69.3641299,
+        "distance_m": 341.0905356496426
+      },
+      "nearest_facility_m": 341.0905356496426,
+      "classification": "abnormal_industrial_thermal_event",
+      "confidence_band": "LOW",
+      "priority": "High",
+      "supporting_evidence": [
+        {
+          "code": "industrial_distance",
+          "feature": "industrial_facility_distance",
+          "actual_value": "341 m",
+          "effect": "supports industrial association",
+          "explanation": "A mapped industrial facility is spatially associated with the thermal cluster. Proximity is not causation."
+        },
+        {
+          "code": "industrial_count",
+          "feature": "industrial_count_1km",
+          "actual_value": "1",
+          "effect": "supports industrial association",
+          "explanation": "Mapped industrial features within 1 km: 1; within 2 km: 1."
+        },
+        {
+          "code": "temporal_window",
+          "feature": "detections_in_window",
+          "actual_value": "6",
+          "effect": "describes the observed window",
+          "explanation": "6 detections, 2 active days, observed duration 23.7 h (0.99 d)."
+        },
+        {
+          "code": "stability",
+          "feature": "spatial_stability",
+          "actual_value": "0.71",
+          "effect": "tight source footprint",
+          "explanation": "Spatial stability index (1.0 = tightly co-located). Dispersion is not a wildfire proof."
+        },
+        {
+          "code": "frp",
+          "feature": "frp",
+          "actual_value": "3.2 MW",
+          "effect": "thermal intensity present",
+          "explanation": "Mean FRP among observations that include FRP. Intensity is not a class by itself."
+        },
+        {
+          "code": "land",
+          "feature": "land_context",
+          "actual_value": "OSM-mapped industrial / man-made features",
+          "effect": "contextual land description",
+          "explanation": "Recorded land/context class is supporting context, not ground truth."
+        },
+        {
+          "code": "day_night",
+          "feature": "day_night",
+          "actual_value": "N",
+          "effect": "day/night pattern",
+          "explanation": "3 day and 3 night detections in the current window."
+        }
+      ],
+      "counter_evidence": [
+        {
+          "code": "short_archive",
+          "feature": "historical_persistence_available",
+          "actual_value": "false",
+          "effect": "blocks multi-week persistence claims",
+          "explanation": "Historical persistence unavailable for current live window."
+        },
+        {
+          "code": "short_duration",
+          "feature": "observed_duration_hours",
+          "actual_value": "23.7",
+          "effect": "short temporal duration",
+          "explanation": "The observed cluster is short-lived in the current window. Repeated detections are not proof of an abnormal fire."
+        }
+      ],
+      "spatial_stability": 0.7083417748439118,
+      "frp_mean": 3.1766666666666663,
+      "active_days": 2,
+      "historical_persistence_available": false,
+      "selector_version": "live-demo-cases-1.0"
+    },
+    {
+      "cluster_id": "SRC-A3976843",
+      "latitude": 15.17612509090909,
+      "longitude": 76.65662290909091,
+      "observation_count": 55,
+      "live_observation_count": 7,
+      "historical_observation_count": 48,
+      "observation_date_range": {
+        "start": "2026-08-14T08:28:00+00:00",
+        "end": "2026-09-14T08:48:00+00:00"
+      },
+      "live_date_range": {
+        "start": "2026-09-11T20:36:00+00:00",
+        "end": "2026-09-14T08:48:00+00:00"
+      },
+      "osm_context_status": "not_available",
+      "nearest_industrial_facility": null,
+      "nearest_facility_m": null,
+      "classification": "insufficient_evidence",
+      "confidence_band": "UNRESOLVED",
+      "priority": "Low",
+      "supporting_evidence": [
+        {
+          "code": "temporal_window",
+          "feature": "detections_in_window",
+          "actual_value": "55",
+          "effect": "describes the observed window",
+          "explanation": "55 detections, 20 active days, observed duration 744.3 h (31.01 d)."
+        },
+        {
+          "code": "stability",
+          "feature": "spatial_stability",
+          "actual_value": "0.64",
+          "effect": "moderate spatial grouping",
+          "explanation": "Spatial stability index (1.0 = tightly co-located). Dispersion is not a wildfire proof."
+        },
+        {
+          "code": "frp",
+          "feature": "frp",
+          "actual_value": "2.3 MW",
+          "effect": "thermal intensity present",
+          "explanation": "Mean FRP among observations that include FRP. Intensity is not a class by itself."
+        },
+        {
+          "code": "day_night",
+          "feature": "day_night",
+          "actual_value": "N",
+          "effect": "day/night pattern",
+          "explanation": "8 day and 47 night detections in the current window."
+        }
+      ],
+      "counter_evidence": [
+        {
+          "code": "context_unavailable",
+          "feature": "context_status",
+          "actual_value": "not_available",
+          "effect": "critical context missing",
+          "explanation": "Industrial / OSM context is not available for this source. Absence of a facility record is not evidence that no facility exists."
+        }
+      ],
+      "spatial_stability": 0.6395979364216109,
+      "frp_mean": 2.3018181818181818,
+      "active_days": 20,
+      "historical_persistence_available": true,
+      "selector_version": "live-demo-cases-1.0"
+    },
+    {
+      "cluster_id": "SRC-E98F0751",
+      "latitude": 23.663762083333335,
+      "longitude": 87.15640166666667,
+      "observation_count": 24,
+      "live_observation_count": 6,
+      "historical_observation_count": 18,
+      "observation_date_range": {
+        "start": "2026-08-12T07:29:00+00:00",
+        "end": "2026-09-13T19:55:00+00:00"
+      },
+      "live_date_range": {
+        "start": "2026-09-11T20:34:00+00:00",
+        "end": "2026-09-13T19:55:00+00:00"
+      },
+      "osm_context_status": "not_available",
+      "nearest_industrial_facility": null,
+      "nearest_facility_m": null,
+      "classification": "insufficient_evidence",
+      "confidence_band": "UNRESOLVED",
+      "priority": "Low",
+      "supporting_evidence": [
+        {
+          "code": "temporal_window",
+          "feature": "detections_in_window",
+          "actual_value": "24",
+          "effect": "describes the observed window",
+          "explanation": "24 detections, 11 active days, observed duration 780.4 h (32.52 d)."
+        },
+        {
+          "code": "stability",
+          "feature": "spatial_stability",
+          "actual_value": "0.68",
+          "effect": "moderate spatial grouping",
+          "explanation": "Spatial stability index (1.0 = tightly co-located). Dispersion is not a wildfire proof."
+        },
+        {
+          "code": "frp",
+          "feature": "frp",
+          "actual_value": "1.8 MW",
+          "effect": "thermal intensity present",
+          "explanation": "Mean FRP among observations that include FRP. Intensity is not a class by itself."
+        },
+        {
+          "code": "day_night",
+          "feature": "day_night",
+          "actual_value": "N",
+          "effect": "day/night pattern",
+          "explanation": "4 day and 20 night detections in the current window."
+        }
+      ],
+      "counter_evidence": [
+        {
+          "code": "context_unavailable",
+          "feature": "context_status",
+          "actual_value": "not_available",
+          "effect": "critical context missing",
+          "explanation": "Industrial / OSM context is not available for this source. Absence of a facility record is not evidence that no facility exists."
+        }
+      ],
+      "spatial_stability": 0.675634597882145,
+      "frp_mean": 1.8291666666666666,
+      "active_days": 11,
+      "historical_persistence_available": true,
+      "selector_version": "live-demo-cases-1.0"
+    }
+  ],
+  "selected": [
+    {
+      "cluster_id": "SRC-A4964848",
+      "latitude": 28.051231666666666,
+      "longitude": 69.36696333333333,
+      "observation_count": 6,
+      "live_observation_count": 6,
+      "historical_observation_count": 0,
+      "observation_date_range": {
+        "start": "2026-09-11T08:07:00+00:00",
+        "end": "2026-09-12T07:50:00+00:00"
+      },
+      "live_date_range": {
+        "start": "2026-09-11T08:07:00+00:00",
+        "end": "2026-09-12T07:50:00+00:00"
+      },
+      "osm_context_status": "available",
+      "nearest_industrial_facility": {
+        "id": "OSM-way-1049716917",
+        "name": "Qadirpur Gas Plant",
+        "facility_type": "gas",
+        "latitude": 28.049455,
+        "longitude": 69.3641299,
+        "distance_m": 341.0905356496426
+      },
+      "nearest_facility_m": 341.0905356496426,
+      "classification": "abnormal_industrial_thermal_event",
+      "confidence_band": "LOW",
+      "priority": "High",
+      "supporting_evidence": [
+        {
+          "code": "industrial_distance",
+          "feature": "industrial_facility_distance",
+          "actual_value": "341 m",
+          "effect": "supports industrial association",
+          "explanation": "A mapped industrial facility is spatially associated with the thermal cluster. Proximity is not causation."
+        },
+        {
+          "code": "industrial_count",
+          "feature": "industrial_count_1km",
+          "actual_value": "1",
+          "effect": "supports industrial association",
+          "explanation": "Mapped industrial features within 1 km: 1; within 2 km: 1."
+        },
+        {
+          "code": "temporal_window",
+          "feature": "detections_in_window",
+          "actual_value": "6",
+          "effect": "describes the observed window",
+          "explanation": "6 detections, 2 active days, observed duration 23.7 h (0.99 d)."
+        },
+        {
+          "code": "stability",
+          "feature": "spatial_stability",
+          "actual_value": "0.71",
+          "effect": "tight source footprint",
+          "explanation": "Spatial stability index (1.0 = tightly co-located). Dispersion is not a wildfire proof."
+        },
+        {
+          "code": "frp",
+          "feature": "frp",
+          "actual_value": "3.2 MW",
+          "effect": "thermal intensity present",
+          "explanation": "Mean FRP among observations that include FRP. Intensity is not a class by itself."
+        },
+        {
+          "code": "land",
+          "feature": "land_context",
+          "actual_value": "OSM-mapped industrial / man-made features",
+          "effect": "contextual land description",
+          "explanation": "Recorded land/context class is supporting context, not ground truth."
+        },
+        {
+          "code": "day_night",
+          "feature": "day_night",
+          "actual_value": "N",
+          "effect": "day/night pattern",
+          "explanation": "3 day and 3 night detections in the current window."
+        }
+      ],
+      "counter_evidence": [
+        {
+          "code": "short_archive",
+          "feature": "historical_persistence_available",
+          "actual_value": "false",
+          "effect": "blocks multi-week persistence claims",
+          "explanation": "Historical persistence unavailable for current live window."
+        },
+        {
+          "code": "short_duration",
+          "feature": "observed_duration_hours",
+          "actual_value": "23.7",
+          "effect": "short temporal duration",
+          "explanation": "The observed cluster is short-lived in the current window. Repeated detections are not proof of an abnormal fire."
+        }
+      ],
+      "spatial_stability": 0.7083417748439118,
+      "frp_mean": 3.1766666666666663,
+      "active_days": 2,
+      "historical_persistence_available": false,
+      "selector_version": "live-demo-cases-1.0"
+    }
+  ]
+}

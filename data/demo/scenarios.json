@@ -1,0 +1,71 @@
+{
+  "as_of": "2026-09-13T00:00:00",
+  "scenarios": [
+    {
+      "id": "SCN-REFINERY-PERSISTENT",
+      "name": "Persistent refinery thermal source",
+      "region": "Jamnagar, Gujarat",
+      "centroid": [22.3724, 69.8712],
+      "land_context": "industrial",
+      "context_status": "AVAILABLE",
+      "context_completeness": "HIGH",
+      "osm_object_types": ["industrial", "refinery", "pipeline"],
+      "notes": "Repeated night-weighted detections at a spatially stable industrial location."
+    },
+    {
+      "id": "SCN-INDUSTRIAL-SPIKE",
+      "name": "Industrial facility with suspicious thermal activity",
+      "region": "Hazira, Gujarat",
+      "centroid": [21.1568, 72.6504],
+      "land_context": "industrial",
+      "context_status": "AVAILABLE",
+      "context_completeness": "HIGH",
+      "osm_object_types": ["industrial", "factory"],
+      "notes": "Recent count/intensity increase spatially associated with a mapped plant."
+    },
+    {
+      "id": "SCN-VEGETATION-FIRE",
+      "name": "Natural vegetation fire",
+      "region": "Nainital district, Uttarakhand",
+      "centroid": [29.3921, 79.4548],
+      "land_context": "forest",
+      "context_status": "AVAILABLE",
+      "context_completeness": "PARTIAL",
+      "osm_object_types": ["wood", "national_park"],
+      "notes": "Short-duration wildland detections without nearby mapped industry."
+    },
+    {
+      "id": "SCN-AGRI-BURN",
+      "name": "Agricultural burning",
+      "region": "Ludhiana hinterland, Punjab",
+      "centroid": [30.7122, 75.8544],
+      "land_context": "cropland",
+      "context_status": "AVAILABLE",
+      "context_completeness": "PARTIAL",
+      "osm_object_types": ["farmland"],
+      "notes": "Daytime cropland detections consistent with residue burning."
+    },
+    {
+      "id": "SCN-UNCERTAIN",
+      "name": "Uncertain hotspot",
+      "region": "Isolated location, Madhya Pradesh",
+      "centroid": [23.4730, 77.9470],
+      "land_context": null,
+      "context_status": "NOT_AVAILABLE",
+      "context_completeness": "NONE",
+      "osm_object_types": [],
+      "notes": "Few observations, missing FRP/confidence, OSM context not available."
+    },
+    {
+      "id": "SCN-CONFLICT",
+      "name": "Conflicting-evidence hotspot",
+      "region": "Pimpri industrial-green fringe, Maharashtra",
+      "centroid": [18.6278, 73.8037],
+      "land_context": "vegetation",
+      "context_status": "AVAILABLE",
+      "context_completeness": "PARTIAL",
+      "osm_object_types": ["industrial", "scrub", "park"],
+      "notes": "Industrial proximity and vegetation land context disagree."
+    }
+  ]
+}

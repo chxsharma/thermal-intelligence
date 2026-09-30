@@ -1,0 +1,92 @@
+{
+  "generated_for": "THERMAL // INTELLIGENCE demo replay",
+  "disclaimer": "Synthetic FIRMS-like records for SIH26162 prototype. Not live satellite detections.",
+  "scenarios": [
+    {
+      "id": "scenario-refinery-persistent",
+      "name": "Persistent refinery thermal source",
+      "region": "Jamnagar, Gujarat",
+      "land_context": "industrial / refinery complex",
+      "context_status": "available",
+      "osm_object_types": ["industrial", "refinery", "flare"],
+      "facility_ids": ["FAC-JAMNAGAR-RIL"]
+    },
+    {
+      "id": "scenario-industrial-suspicious",
+      "name": "Industrial facility with suspicious thermal activity",
+      "region": "Visakhapatnam, Andhra Pradesh",
+      "land_context": "industrial port / tank farm",
+      "context_status": "available",
+      "osm_object_types": ["industrial", "storage_tank"],
+      "facility_ids": ["FAC-VIZAG-HPCL"]
+    },
+    {
+      "id": "scenario-vegetation-fire",
+      "name": "Natural vegetation fire",
+      "region": "Nainital hills, Uttarakhand",
+      "land_context": "forest / wildland vegetation",
+      "context_status": "not_found",
+      "osm_object_types": ["forest"],
+      "facility_ids": []
+    },
+    {
+      "id": "scenario-agricultural-burning",
+      "name": "Agricultural burning",
+      "region": "Ludhiana belt, Punjab",
+      "land_context": "cropland / agricultural",
+      "context_status": "not_found",
+      "osm_object_types": ["farmland"],
+      "facility_ids": []
+    },
+    {
+      "id": "scenario-uncertain-hotspot",
+      "name": "Uncertain hotspot",
+      "region": "Thar margin, Rajasthan",
+      "land_context": null,
+      "context_status": "not_available",
+      "osm_object_types": [],
+      "facility_ids": []
+    },
+    {
+      "id": "scenario-conflicting-evidence",
+      "name": "Conflicting-evidence hotspot",
+      "region": "Pimpri-Chinchwad fringe, Maharashtra",
+      "land_context": "mixed industrial / vegetation fringe",
+      "context_status": "available",
+      "osm_object_types": ["industrial", "scrub"],
+      "facility_ids": ["FAC-PUNE-MIDC"]
+    }
+  ],
+  "facilities": [
+    {
+      "id": "FAC-JAMNAGAR-RIL",
+      "name": "Jamnagar refining complex (mapped)",
+      "facility_type": "oil_refinery",
+      "latitude": 22.3724,
+      "longitude": 69.8591,
+      "osm_id": "demo-osm-1001",
+      "source": "demo",
+      "provenance": {"dataset": "demo-osm-extract", "dataset_version": "demo-2026.09"}
+    },
+    {
+      "id": "FAC-VIZAG-HPCL",
+      "name": "Visakhapatnam refinery / tank farm (mapped)",
+      "facility_type": "oil_refinery",
+      "latitude": 17.6908,
+      "longitude": 83.2185,
+      "osm_id": "demo-osm-1002",
+      "source": "demo",
+      "provenance": {"dataset": "demo-osm-extract", "dataset_version": "demo-2026.09"}
+    },
+    {
+      "id": "FAC-PUNE-MIDC",
+      "name": "Pimpri industrial estate (mapped)",
+      "facility_type": "industrial_estate",
+      "latitude": 18.6270,
+      "longitude": 73.8050,
+      "osm_id": "demo-osm-1003",
+      "source": "demo",
+      "provenance": {"dataset": "demo-osm-extract", "dataset_version": "demo-2026.09"}
+    }
+  ]
+}
